@@ -29,7 +29,7 @@ app.get("/data", (request, response) => {
     } else {
       /* Sinon on réponds avec le code 200 qui va délivrer les data */
 
-      response.status(200).json(JSON.parse(data));
+      response.status(200).json(JSON.parse(data)); /* Ici on convertit notre string JSON en objet JS afin de pouvoir utiliser nos data */
     }
   });
 });
