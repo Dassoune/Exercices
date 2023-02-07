@@ -45,8 +45,6 @@ app.get("/data", (request, response) => {
     }
   });
 });
-// on export la constante app pour la rendre utilisable dans d'autres parties
-module.exports = app;
 
 /*  On demande a express d'exposer tout son contenue enregistré sur le port 3000 du serveur qui accueil l'app*/
 app.listen(3000, () => {
@@ -119,3 +117,6 @@ app.post("/data", (request, response) => {
     }
   });
 });
+
+// on export la constante app pour la rendre utilisable dans d'autres parties
+module.exports = app;
